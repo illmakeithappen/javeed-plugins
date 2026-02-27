@@ -13,6 +13,16 @@ Autonomous workflow for generating and validating a weekly shift plan for one Be
 
 ## Workflow
 
+### Step 0: Server Ready Check
+
+The MCP server runs on Render free tier and spins down after 15 min idle. The first tool call may take ~30 seconds while the container cold-starts.
+
+```
+list_profiles()
+```
+
+If this call takes more than 5 seconds, inform the user: "Der MCP-Server startet gerade -- bitte einen Moment Geduld (~30 Sek.)." Then wait for the response before proceeding.
+
 ### Step 1: Ensure Fresh Snapshot
 
 Check for existing snapshots first, then sync if needed.
