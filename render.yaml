@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: javeed-ordio-mcp
+    runtime: docker
+    dockerfilePath: javeed-ordio/Dockerfile
+    dockerContext: javeed-ordio
+    region: frankfurt
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: "8080"
+      - key: ORDIO_API_KEY_ROSA
+        sync: false
+      - key: ORDIO_COMPANY_ID_ROSA
+        sync: false
+      - key: ORDIO_API_KEY_HINWEG
+        sync: false
+      - key: ORDIO_COMPANY_ID_HINWEG
+        sync: false
+      - key: MCP_API_KEY
+        sync: false
+      - key: ORDIO_LITE_DEFAULT_BETRIEB
+        value: "rosa"

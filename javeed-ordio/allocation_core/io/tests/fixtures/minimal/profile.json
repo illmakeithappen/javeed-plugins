@@ -1,0 +1,24 @@
+{
+  "name": "bacchus_march_2026",
+  "description": "March 2026 minimal test rules for Bacchus",
+  "policy": {
+    "prefer_applicants": true,
+    "max_consecutive_days": 5
+  },
+  "employee_rules": {
+    "Omer Yilmaz": {
+      "target_weekly_hours": 10,
+      "no_additional_shifts": false,
+      "notes": "nur abends"
+    },
+    "Anna Meier": {
+      "target_weekly_hours": 18.5,
+      "notes": ""
+    },
+    "Lukas Schmidt": {
+      "target_weekly_hours": 37,
+      "preferred_working_areas": ["Kueche"],
+      "notes": ""
+    }
+  }
+}

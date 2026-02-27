@@ -1,0 +1,27 @@
+[project]
+name = "javeed-ordio"
+version = "0.2.0"
+description = "Shift allocation engine for Javeed venues — deterministic planning, coverage analysis, and Betriebsleiter review workflow"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "httpx>=0.27.0",
+  "pydantic>=2.7.0",
+  "python-dotenv>=1.0.0",
+  "mcp>=1.0.0",
+  "matplotlib>=3.7.0",
+]
+
+[project.scripts]
+javeed-ordio = "javeed_ordio.cli:main"
+javeed-ordio-mcp = "javeed_ordio.mcp_server:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["javeed_ordio", "allocation_core"]
+
+[tool.setuptools.package-data]
+javeed_ordio = ["templates/*.html"]

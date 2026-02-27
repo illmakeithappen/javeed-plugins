@@ -1,0 +1,4 @@
+employee_id,name,role,employment,hourly_wage,max_salary,skills
+E-4012,Omer Yilmaz,service,Minijob,12.50,538.00,theke|bar
+E-4098,Anna Meier,kellner,Teilzeit,14.00,1200.00,service
+E-5001,Lukas Schmidt,koch,Vollzeit,16.00,2800.00,kueche|bar
