@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monatsuebersicht</title>
+<style>
+/*! Tailwind CSS v3.4.19 – pre-built utilities (no CDN) */
+*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.absolute{position:absolute}.relative{position:relative}.left-0{left:0}.top-0{top:0}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:.25rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.mr-1{margin-right:.25rem}.mt-0\.5{margin-top:.125rem}.mt-2{margin-top:.5rem}.mt-4{margin-top:1rem}.inline-block{display:inline-block}.flex{display:flex}.table{display:table}.grid{display:grid}.h-3{height:.75rem}.h-4{height:1rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-3{width:.75rem}.w-\[100px\]{width:100px}.w-\[110px\]{width:110px}.w-\[140px\]{width:140px}.w-\[20px\]{width:20px}.w-\[40px\]{width:40px}.w-\[50px\]{width:50px}.w-\[60px\]{width:60px}.w-\[70px\]{width:70px}.w-\[90px\]{width:90px}.w-full{width:100%}.min-w-\[200px\]{min-width:200px}.max-w-7xl{max-width:80rem}.flex-1{flex:1 1 0%}.cursor-default{cursor:default}.cursor-pointer{cursor:pointer}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-7{grid-template-columns:repeat(7,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.space-y-1>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.25rem*var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.rounded{border-radius:.25rem}.rounded-lg{border-radius:.5rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-amber-200{--tw-border-opacity:1;border-color:rgb(253 230 138/var(--tw-border-opacity,1))}.border-gray-100{--tw-border-opacity:1;border-color:rgb(243 244 246/var(--tw-border-opacity,1))}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235/var(--tw-border-opacity,1))}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219/var(--tw-border-opacity,1))}.border-gray-800{--tw-border-opacity:1;border-color:rgb(31 41 55/var(--tw-border-opacity,1))}.border-green-300{--tw-border-opacity:1;border-color:rgb(134 239 172/var(--tw-border-opacity,1))}.border-red-200{--tw-border-opacity:1;border-color:rgb(254 202 202/var(--tw-border-opacity,1))}.border-red-300{--tw-border-opacity:1;border-color:rgb(252 165 165/var(--tw-border-opacity,1))}.border-yellow-200{--tw-border-opacity:1;border-color:rgb(254 240 138/var(--tw-border-opacity,1))}.border-yellow-300{--tw-border-opacity:1;border-color:rgb(253 224 71/var(--tw-border-opacity,1))}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235/var(--tw-bg-opacity,1))}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254/var(--tw-bg-opacity,1))}.bg-blue-400{--tw-bg-opacity:1;background-color:rgb(96 165 250/var(--tw-bg-opacity,1))}.bg-blue-50{--tw-bg-opacity:1;background-color:rgb(239 246 255/var(--tw-bg-opacity,1))}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity,1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246/var(--tw-bg-opacity,1))}.bg-gray-200{--tw-bg-opacity:1;background-color:rgb(229 231 235/var(--tw-bg-opacity,1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251/var(--tw-bg-opacity,1))}.bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55/var(--tw-bg-opacity,1))}.bg-green-100{--tw-bg-opacity:1;background-color:rgb(220 252 231/var(--tw-bg-opacity,1))}.bg-green-200{--tw-bg-opacity:1;background-color:rgb(187 247 208/var(--tw-bg-opacity,1))}.bg-green-500{--tw-bg-opacity:1;background-color:rgb(34 197 94/var(--tw-bg-opacity,1))}.bg-purple-100{--tw-bg-opacity:1;background-color:rgb(243 232 255/var(--tw-bg-opacity,1))}.bg-red-100{--tw-bg-opacity:1;background-color:rgb(254 226 226/var(--tw-bg-opacity,1))}.bg-red-200{--tw-bg-opacity:1;background-color:rgb(254 202 202/var(--tw-bg-opacity,1))}.bg-red-50{--tw-bg-opacity:1;background-color:rgb(254 242 242/var(--tw-bg-opacity,1))}.bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68/var(--tw-bg-opacity,1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-yellow-100{--tw-bg-opacity:1;background-color:rgb(254 249 195/var(--tw-bg-opacity,1))}.bg-yellow-200{--tw-bg-opacity:1;background-color:rgb(254 240 138/var(--tw-bg-opacity,1))}.bg-yellow-50{--tw-bg-opacity:1;background-color:rgb(254 252 232/var(--tw-bg-opacity,1))}.bg-yellow-500{--tw-bg-opacity:1;background-color:rgb(234 179 8/var(--tw-bg-opacity,1))}.p-1\.5{padding:.375rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.align-top{vertical-align:top}.align-middle{vertical-align:middle}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.text-amber-800{--tw-text-opacity:1;color:rgb(146 64 14/var(--tw-text-opacity,1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235/var(--tw-text-opacity,1))}.text-blue-700{--tw-text-opacity:1;color:rgb(29 78 216/var(--tw-text-opacity,1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity,1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity,1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99/var(--tw-text-opacity,1))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39/var(--tw-text-opacity,1))}.text-green-600{--tw-text-opacity:1;color:rgb(22 163 74/var(--tw-text-opacity,1))}.text-green-700{--tw-text-opacity:1;color:rgb(21 128 61/var(--tw-text-opacity,1))}.text-purple-700{--tw-text-opacity:1;color:rgb(126 34 206/var(--tw-text-opacity,1))}.text-red-600{--tw-text-opacity:1;color:rgb(220 38 38/var(--tw-text-opacity,1))}.text-red-700{--tw-text-opacity:1;color:rgb(185 28 28/var(--tw-text-opacity,1))}.text-red-800{--tw-text-opacity:1;color:rgb(153 27 27/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.text-yellow-600{--tw-text-opacity:1;color:rgb(202 138 4/var(--tw-text-opacity,1))}.text-yellow-700{--tw-text-opacity:1;color:rgb(161 98 7/var(--tw-text-opacity,1))}.text-yellow-800{--tw-text-opacity:1;color:rgb(133 77 14/var(--tw-text-opacity,1))}.ring-1{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.ring-gray-300{--tw-ring-opacity:1;--tw-ring-color:rgb(209 213 219/var(--tw-ring-opacity,1))}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.hover\:bg-gray-50:hover{--tw-bg-opacity:1;background-color:rgb(249 250 251/var(--tw-bg-opacity,1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus\:ring-blue-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(59 130 246/var(--tw-ring-opacity,1))}@media (min-width:640px){.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}}@media (min-width:768px){.md\:grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))}}
+/* Custom styles */
+@media print { .no-print { display: none !important; } }
+.expand-row { display: none; }
+.expand-row.open { display: table-row; }
+body { font-family: system-ui, -apple-system, sans-serif; }
+.bar-inner { transition: width 0.3s ease; }
+.sort-btn { cursor: pointer; user-select: none; }
+.sort-btn:hover { color: #1f2937; }
+.sort-btn .arrow { opacity: 0.3; }
+.sort-btn.active .arrow { opacity: 1; }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-900 min-h-screen">
+
+<script id="month-data" type="application/json">
+{
+  "snapshot_id": "hinweg-2026-03-01-2026-03-31-502ee165",
+  "betrieb": "Hin&Weg",
+  "month": "Maerz 2026",
+  "range": { "from": "2026-03-01", "to": "2026-03-31" },
+  "kpis": {
+    "employees": 27,
+    "active_employees": 14,
+    "assigned_shifts": 83,
+    "open_slots": 19,
+    "applications": 95,
+    "coverage_rate": 81.4
+  },
+  "open_by_day": [
+    {"date":"2026-03-01","open":1,"applicants":0},
+    {"date":"2026-03-07","open":2,"applicants":0},
+    {"date":"2026-03-08","open":1,"applicants":0},
+    {"date":"2026-03-09","open":2,"applicants":0},
+    {"date":"2026-03-13","open":1,"applicants":0},
+    {"date":"2026-03-14","open":1,"applicants":0},
+    {"date":"2026-03-15","open":1,"applicants":0},
+    {"date":"2026-03-20","open":1,"applicants":0},
+    {"date":"2026-03-21","open":2,"applicants":0},
+    {"date":"2026-03-22","open":2,"applicants":1},
+    {"date":"2026-03-23","open":1,"applicants":0},
+    {"date":"2026-03-25","open":1,"applicants":1},
+    {"date":"2026-03-28","open":1,"applicants":1},
+    {"date":"2026-03-29","open":1,"applicants":2},
+    {"date":"2026-03-31","open":1,"applicants":0}
+  ],
+  "shift_types": { "frueh": { "assigned": 64, "open": 14 }, "spaet": { "assigned": 19, "open": 5 } },
+  "employees": [
+    {
+      "name": "Luise Westphal", "type": "Stud. Aushilfe", "type_key": "werki",
+      "wage": 15, "max_salary": 1200, "cap_hours": 80,
+      "hours": 84, "shifts": 13, "apps": 0, "absences": 1,
+      "absence_note": "07.03.--15.03. Unbezahlter Urlaub",
+      "skills": ["Kiosk", "Produktion / Backen"],
+      "shift_dates": ["2026-03-02","2026-03-04","2026-03-05","2026-03-06","2026-03-16","2026-03-18","2026-03-19","2026-03-20","2026-03-23","2026-03-25","2026-03-26","2026-03-27","2026-03-30"]
+    },
+    {
+      "name": "Ece Genca", "type": "Stud. Aushilfe", "type_key": "werki",
+      "wage": 15, "max_salary": 1020, "cap_hours": 68,
+      "hours": 62, "shifts": 9, "apps": 13, "absences": 0, "absence_note": "",
+      "skills": ["Kiosk"],
+      "shift_dates": ["2026-03-02","2026-03-03","2026-03-04","2026-03-09","2026-03-10","2026-03-16","2026-03-17","2026-03-24","2026-03-31"]
+    },
+    {
+      "name": "Luma Klein Spindola", "type": "Minijob", "type_key": "mini",
+      "wage": 15.5, "max_salary": 603, "cap_hours": 38.9,
+      "hours": 46, "shifts": 8, "apps": 6, "absences": 0, "absence_note": "",
+      "skills": ["Kiosk"],
+      "shift_dates": ["2026-03-03","2026-03-15","2026-03-16","2026-03-18","2026-03-20","2026-03-26","2026-03-27","2026-03-30"]
+    },
+    {
+      "name": "Maja Joyce Thomas", "type": "Minijob", "type_key": "mini",
+      "wage": 15.5, "max_salary": 603, "cap_hours": 38.9,
+      "hours": 44.5, "shifts": 7, "apps": 3, "absences": 0, "absence_note": "",
+      "skills": ["Kiosk"],
+      "shift_dates": ["2026-03-03","2026-03-08","2026-03-10","2026-03-12","2026-03-17","2026-03-19","2026-03-29"]
+    },
+    {
+      "name": "Joelle Wiedemann", "type": "Stud. Aushilfe", "type_key": "werki",
+      "wage": 15, "max_salary": 1200, "cap_hours": 80,
+      "hours": 42, "shifts": 5, "apps": 11, "absences": 0, "absence_note": "",
+      "skills": ["Kiosk", "Produktion / Backen"],
+      "shift_dates": ["2026-03-01","2026-03-12","2026-03-24","2026-03-28","2026-03-29"]
+    },
+    {
+      "name": "Raphael Yasin Morsi", "type": "Minijob", "type_key": "mini",
+      "wage": 15, "max_salary": 556, "cap_hours": 37.1,
+      "hours": 41, "shifts": 6, "apps": 7, "absences": 0, "absence_note": "",
+      "skills": ["Kiosk"],
+      "shift_dates": ["2026-03-02","2026-03-06","2026-03-09","2026-03-11","2026-03-13","2026-03-14"]
+    },
+    {
+      "name": "Besiane Hetemi", "type": "Minijob", "type_key": "mini",
+      "wage": 15, "max_salary": 556, "cap_hours": 37.1,
+      "hours": 40.5, "shifts": 7, "apps": 9, "absences": 0, "absence_note": "",
+      "skills": ["Kiosk"],
+      "shift_dates": ["2026-03-05","2026-03-06","2026-03-10","2026-03-11","2026-03-13","2026-03-23","2026-03-27"]
+    },
+    {
+      "name": "Annika Geyer", "type": "Minijob", "type_key": "mini",
+      "wage": 15.5, "max_salary": 603, "cap_hours": 38.9,
+      "hours": 36.5, "shifts": 5, "apps": 37, "absences": 0, "absence_note": "",
+      "skills": ["Kiosk"],
+      "shift_dates": ["2026-03-07","2026-03-14","2026-03-15","2026-03-21","2026-03-28"]
+    },
+    {
+      "name": "Niklas Kroll", "type": "Stud. Aushilfe", "type_key": "werki",
+      "wage": 15, "max_salary": 1200, "cap_hours": 80,
+      "hours": 34, "shifts": 4, "apps": 0, "absences": 0, "absence_note": "",
+      "skills": ["Kiosk", "Produktion / Backen"],
+      "shift_dates": ["2026-03-04","2026-03-11","2026-03-18","2026-03-25"]
+    },
+    {
+      "name": "Jonas Metzmacher", "type": "Minijob", "type_key": "mini",
+      "wage": 15, "max_salary": 556, "cap_hours": 37.1,
+      "hours": 34, "shifts": 4, "apps": 0, "absences": 0, "absence_note": "",
+      "skills": ["Kiosk"],
+      "shift_dates": ["2026-03-05","2026-03-12","2026-03-19","2026-03-26"]
+    },
+    {
+      "name": "Elena Schroeder", "type": "Minijob", "type_key": "mini",
+      "wage": 15, "max_salary": 556, "cap_hours": 37.1,
+      "hours": 33, "shifts": 4, "apps": 0, "absences": 0, "absence_note": "",
+      "skills": ["Kiosk", "Produktion / Backen", "back office"],
+      "shift_dates": ["2026-03-06","2026-03-13","2026-03-20","2026-03-27"]
+    },
+    {
+      "name": "Jana Kampermann", "type": "Minijob", "type_key": "mini",
+      "wage": 15, "max_salary": 556, "cap_hours": 37.1,
+      "hours": 32.5, "shifts": 4, "apps": 8, "absences": 0, "absence_note": "",
+      "skills": ["Kiosk", "Produktion / Backen"],
+      "shift_dates": ["2026-03-02","2026-03-22","2026-03-23","2026-03-30"]
+    },
+    {
+      "name": "Julie Jaehnig", "type": "Minijob", "type_key": "mini",
+      "wage": 15, "max_salary": 556, "cap_hours": 37.1,
+      "hours": 15, "shifts": 5, "apps": 0, "absences": 0, "absence_note": "",
+      "skills": ["Kiosk"],
+      "shift_dates": ["2026-03-16","2026-03-17","2026-03-24","2026-03-30","2026-03-31"]
+    },
+    {
+      "name": "Felix Ebertz", "type": "Minijob", "type_key": "mini",
+      "wage": 15, "max_salary": 556, "cap_hours": 37.1,
+      "hours": 12, "shifts": 2, "apps": 1, "absences": 0, "absence_note": "",
+      "skills": ["Kiosk", "Produktion / Backen"],
+      "shift_dates": ["2026-03-01","2026-03-08"]
+    }
+  ]
+}
+</script>
+
+<div id="app" class="max-w-7xl mx-auto px-4 py-6">
+
+  <!-- Header -->
+  <div class="bg-white border border-gray-200 rounded-lg p-5 mb-4">
+    <div class="flex flex-wrap items-baseline justify-between gap-2 mb-3">
+      <h1 class="text-xl font-bold">Monatsuebersicht</h1>
+      <span class="text-sm text-gray-500" id="meta-line"></span>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3" id="kpi-bar"></div>
+  </div>
+
+  <!-- Assessment Alerts -->
+  <div id="assessment-bar" class="mb-4"></div>
+
+  <!-- Calendar Strip -->
+  <div class="bg-white border border-gray-200 rounded-lg p-4 mb-4">
+    <div class="text-xs font-semibold text-gray-500 mb-2">Tagesabdeckung</div>
+    <div id="calendar" class="overflow-x-auto"></div>
+    <div class="flex gap-4 mt-2 text-xs text-gray-500">
+      <span><span class="inline-block w-3 h-3 rounded bg-green-200 mr-1 align-middle"></span>Voll besetzt</span>
+      <span><span class="inline-block w-3 h-3 rounded bg-yellow-200 mr-1 align-middle"></span>Offen (mit Bewerbungen)</span>
+      <span><span class="inline-block w-3 h-3 rounded bg-red-200 mr-1 align-middle"></span>Offen (keine Bewerbungen)</span>
+      <span><span class="inline-block w-3 h-3 rounded bg-gray-100 mr-1 align-middle border border-gray-200"></span>Keine Schichten</span>
+    </div>
+  </div>
+
+  <!-- Filters -->
+  <div class="no-print bg-white border border-gray-200 rounded-lg p-4 mb-4 flex flex-wrap items-center gap-3">
+    <input type="text" id="search" placeholder="Suche: Name, Skill..."
+           class="flex-1 min-w-[200px] px-3 py-1.5 border border-gray-300 rounded text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+           oninput="render()">
+    <div class="flex gap-1">
+      <button onclick="setFilter('type','all')" data-filter="type-all" class="filter-btn px-3 py-1.5 text-sm rounded border">Alle</button>
+      <button onclick="setFilter('type','mini')" data-filter="type-mini" class="filter-btn px-3 py-1.5 text-sm rounded border">Mini</button>
+      <button onclick="setFilter('type','werki')" data-filter="type-werki" class="filter-btn px-3 py-1.5 text-sm rounded border">Werki</button>
+    </div>
+    <div class="flex gap-1">
+      <button onclick="setFilter('status','all')" data-filter="status-all" class="filter-btn px-3 py-1.5 text-sm rounded border">Alle</button>
+      <button onclick="setFilter('status','verfuegbar')" data-filter="status-verfuegbar" class="filter-btn px-3 py-1.5 text-sm rounded border">Verfuegbar</button>
+      <button onclick="setFilter('status','nahe')" data-filter="status-nahe" class="filter-btn px-3 py-1.5 text-sm rounded border">Nahe Grenze</button>
+      <button onclick="setFilter('status','ueber')" data-filter="status-ueber" class="filter-btn px-3 py-1.5 text-sm rounded border">Ueberschritten</button>
+      <button onclick="setFilter('status','idle')" data-filter="status-idle" class="filter-btn px-3 py-1.5 text-sm rounded border">Idle</button>
+    </div>
+  </div>
+
+  <!-- Shift Type Balance -->
+  <div class="bg-white border border-gray-200 rounded-lg p-4 mb-4">
+    <div class="text-xs font-semibold text-gray-500 mb-2">Schichttyp-Verteilung</div>
+    <div id="shift-types" class="flex gap-6"></div>
+  </div>
+
+  <!-- Employee Table -->
+  <div class="bg-white border border-gray-200 rounded-lg overflow-x-auto">
+    <table class="w-full text-sm">
+      <thead>
+        <tr class="bg-gray-50 border-b border-gray-200 text-left">
+          <th class="px-3 py-2.5 font-semibold sort-btn" onclick="setSort('name')">Name <span class="arrow">&#9650;</span></th>
+          <th class="px-3 py-2.5 font-semibold w-[90px]">Typ</th>
+          <th class="px-3 py-2.5 font-semibold w-[60px] text-right sort-btn" onclick="setSort('hours')">Std <span class="arrow">&#9650;</span></th>
+          <th class="px-3 py-2.5 font-semibold w-[60px] text-right">Kap.</th>
+          <th class="px-3 py-2.5 font-semibold w-[60px] text-right sort-btn" onclick="setSort('target')">Soll <span class="arrow">&#9650;</span></th>
+          <th class="px-3 py-2.5 font-semibold w-[70px] text-right sort-btn" onclick="setSort('delta')">Delta <span class="arrow">&#9650;</span></th>
+          <th class="px-3 py-2.5 font-semibold w-[140px]">Auslastung</th>
+          <th class="px-3 py-2.5 font-semibold w-[140px]">Gehaltsgrenze</th>
+          <th class="px-3 py-2.5 font-semibold w-[50px] text-center sort-btn" onclick="setSort('shifts')">Sch <span class="arrow">&#9650;</span></th>
+          <th class="px-3 py-2.5 font-semibold w-[50px] text-center sort-btn" onclick="setSort('apps')">Bew <span class="arrow">&#9650;</span></th>
+          <th class="px-3 py-2.5 font-semibold w-[110px]">Status</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+  </div>
+
+  <p class="text-xs text-gray-400 mt-4 text-center">
+    Generiert durch Javel. Daten basieren auf Snapshot-Stand.
+  </p>
+</div>
+
+<script>
+const DAYS_DE = ['So','Mo','Di','Mi','Do','Fr','Sa'];
+const data = JSON.parse(document.getElementById('month-data').textContent);
+let filters = { type: 'all', status: 'all' };
+let sortKey = 'hours';
+let sortDir = -1; // -1 = desc
+let expandedRows = new Set();
+
+// -- helpers --
+function getStatus(emp) {
+  if (emp.hours === 0 && emp.absences === 0) return 'idle';
+  if (emp.hours === 0) return 'keine';
+  const pct = emp.cap_hours > 0 ? (emp.hours / emp.cap_hours) * 100 : 0;
+  if (pct > 100) return 'ueber';
+  if (pct >= 85) return 'nahe';
+  return 'verfuegbar';
+}
+
+function statusBadge(s) {
+  const map = {
+    'ueber': ['Ueberschritten', 'bg-red-100 text-red-700'],
+    'nahe': ['Nahe Grenze', 'bg-yellow-100 text-yellow-700'],
+    'verfuegbar': ['Verfuegbar', 'bg-green-100 text-green-700'],
+    'idle': ['Idle', 'bg-blue-100 text-blue-700'],
+    'keine': ['Abwesend', 'bg-gray-100 text-gray-500']
+  };
+  const [label, cls] = map[s] || ['--', 'bg-gray-100 text-gray-500'];
+  return '<span class="inline-block px-2 py-0.5 rounded text-xs font-medium ' + cls + '">' + label + '</span>';
+}
+
+function typeBadge(key) {
+  if (key === 'mini') return '<span class="inline-block px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-700">Mini</span>';
+  return '<span class="inline-block px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-700">Werki</span>';
+}
+
+function barHtml(pct, label) {
+  let color = 'bg-green-500';
+  if (pct >= 100) color = 'bg-red-500';
+  else if (pct >= 85) color = 'bg-yellow-500';
+  const w = Math.min(pct, 100);
+  return '<div class="flex items-center gap-2">' +
+    '<div class="flex-1 bg-gray-100 rounded h-4 relative overflow-hidden">' +
+    '<div class="bar-inner absolute left-0 top-0 h-full rounded ' + color + '" style="width:' + w + '%"></div>' +
+    '</div>' +
+    '<span class="text-xs font-mono w-[40px] text-right">' + label + '</span>' +
+    '</div>';
+}
+
+function weekNum(dateStr) {
+  const d = new Date(dateStr + 'T00:00:00');
+  return Math.floor((d.getDate() - 1) / 7);
+}
+
+function getWeekLabels() {
+  const to = new Date(data.range.to + 'T00:00:00');
+  const lastDay = to.getDate();
+  const labels = [];
+  for (let i = 0; i * 7 + 1 <= lastDay; i++) {
+    const start = i * 7 + 1;
+    const end = Math.min((i + 1) * 7, lastDay);
+    labels.push('(' + start + '-' + end + ')');
+  }
+  return labels;
+}
+
+function kpiCard(label, value, sub, alertLevel) {
+  const borderCls = alertLevel === 'red' ? 'border-red-200 bg-red-50' :
+                    alertLevel === 'yellow' ? 'border-yellow-200 bg-yellow-50' :
+                    'border-gray-100';
+  return '<div class="rounded px-3 py-2 border ' + borderCls + '">' +
+    '<div class="text-xs text-gray-500">' + label + '</div>' +
+    '<div class="text-lg font-bold">' + value + '</div>' +
+    (sub ? '<div class="text-xs text-gray-400">' + sub + '</div>' : '') +
+    '</div>';
+}
+
+// -- calendar --
+function renderCalendar() {
+  const openMap = {};
+  data.open_by_day.forEach(d => { openMap[d.date] = d; });
+
+  // Build assigned count per day from employee shift_dates
+  const assignedMap = {};
+  data.employees.forEach(emp => {
+    emp.shift_dates.forEach(d => { assignedMap[d] = (assignedMap[d] || 0) + 1; });
+  });
+
+  // Generate all days from data.range
+  const rangeFrom = new Date(data.range.from + 'T00:00:00');
+  const rangeTo = new Date(data.range.to + 'T00:00:00');
+  const days = [];
+  const cur = new Date(rangeFrom);
+  while (cur <= rangeTo) {
+    const y = cur.getFullYear();
+    const m = String(cur.getMonth() + 1).padStart(2, '0');
+    const dd = String(cur.getDate()).padStart(2, '0');
+    const iso = y + '-' + m + '-' + dd;
+    const wd = DAYS_DE[cur.getDay()];
+    const isWeekend = cur.getDay() === 0 || cur.getDay() === 6;
+    const assigned = assignedMap[iso] || 0;
+    const open = openMap[iso] ? openMap[iso].open : 0;
+    const applicants = openMap[iso] ? openMap[iso].applicants : 0;
+    days.push({ day: cur.getDate(), wd, iso, isWeekend, assigned, open, applicants });
+    cur.setDate(cur.getDate() + 1);
+  }
+
+  const offset = (rangeFrom.getDay() + 6) % 7;
+
+  let html = '<div class="grid grid-cols-7 gap-1 text-xs">';
+  // Header
+  ['Mo','Di','Mi','Do','Fr','Sa','So'].forEach(d => {
+    html += '<div class="text-center font-semibold text-gray-400 py-1">' + d + '</div>';
+  });
+  // Padding
+  for (let i = 0; i < offset; i++) {
+    html += '<div></div>';
+  }
+  // Days
+  days.forEach(d => {
+    let bg, border, title;
+    if (d.assigned === 0 && d.open === 0) {
+      bg = 'bg-gray-50'; border = 'border-gray-200'; title = 'Keine Schichten';
+    } else if (d.open === 0) {
+      bg = 'bg-green-100'; border = 'border-green-300'; title = d.assigned + ' Schichten, voll besetzt';
+    } else if (d.applicants > 0) {
+      bg = 'bg-yellow-100'; border = 'border-yellow-300'; title = d.assigned + ' besetzt, ' + d.open + ' offen (' + d.applicants + ' Bew.)';
+    } else {
+      bg = 'bg-red-100'; border = 'border-red-300'; title = d.assigned + ' besetzt, ' + d.open + ' offen (0 Bew.)';
+    }
+    const weekendTint = d.isWeekend ? ' ring-1 ring-gray-300' : '';
+
+    html += '<div class="rounded border ' + bg + ' ' + border + weekendTint +
+      ' p-1.5 text-center cursor-default" title="' + title + '">' +
+      '<div class="font-bold">' + d.day + '</div>' +
+      '<div class="text-gray-500">' + d.wd + '</div>';
+    if (d.open > 0) {
+      html += '<div class="mt-0.5 text-red-600 font-semibold">' + d.open + ' offen</div>';
+    } else if (d.assigned > 0) {
+      html += '<div class="mt-0.5 text-green-700">' + d.assigned + '</div>';
+    }
+    html += '</div>';
+  });
+  html += '</div>';
+
+  document.getElementById('calendar').innerHTML = html;
+}
+
+// -- shift type bars --
+function renderShiftTypes() {
+  const st = data.shift_types;
+  const labels = { frueh: 'Frueh', spaet: 'Spaet', normal: 'Normal' };
+
+  function typeBar(label, assigned, open) {
+    const total = assigned + open;
+    const pct = total > 0 ? Math.round((assigned / total) * 100) : 0;
+    return '<div class="flex-1">' +
+      '<div class="flex justify-between text-xs mb-1"><span class="font-medium">' + label + '</span><span class="text-gray-500">' + assigned + '/' + total + ' besetzt (' + pct + '%)</span></div>' +
+      '<div class="bg-gray-100 rounded h-3 overflow-hidden">' +
+      '<div class="h-full rounded bg-blue-500" style="width:' + pct + '%"></div>' +
+      '</div></div>';
+  }
+
+  let html = '';
+  for (const [key, vals] of Object.entries(st)) {
+    html += typeBar(labels[key] || key, vals.assigned, vals.open);
+  }
+  document.getElementById('shift-types').innerHTML = html;
+}
+
+// -- sorting --
+function setSort(key) {
+  if (sortKey === key) sortDir *= -1;
+  else { sortKey = key; sortDir = key === 'name' ? 1 : -1; }
+  render();
+}
+
+function setFilter(group, value) {
+  filters[group] = value;
+  render();
+}
+
+function toggleExpand(name) {
+  if (expandedRows.has(name)) expandedRows.delete(name);
+  else expandedRows.add(name);
+  render();
+}
+
+// -- assessment alerts --
+function renderAssessment() {
+  const items = data.assessment || [];
+  if (items.length === 0) {
+    document.getElementById('assessment-bar').innerHTML = '';
+    return;
+  }
+
+  const levelStyles = {
+    red: 'bg-red-50 border-red-200 text-red-800',
+    yellow: 'bg-yellow-50 border-yellow-200 text-yellow-800',
+    green: 'bg-green-100 border-green-300 text-green-700',
+  };
+  const levelIcons = { red: '!', yellow: '!', green: '\u2713' };
+
+  let html = '<div class="flex flex-col gap-2">';
+  items.forEach(item => {
+    const style = levelStyles[item.level] || levelStyles.yellow;
+    const icon = levelIcons[item.level] || '!';
+    html += '<div class="border rounded-lg px-4 py-2 text-sm flex items-center gap-2 ' + style + '">' +
+      '<span class="font-bold">' + icon + '</span> ' + item.text + '</div>';
+  });
+  html += '</div>';
+  document.getElementById('assessment-bar').innerHTML = html;
+}
+
+// -- main render --
+function render() {
+  const searchVal = (document.getElementById('search').value || '').toLowerCase();
+
+  // KPIs
+  const k = data.kpis;
+  const totalHours = data.employees.reduce((s, e) => s + e.hours, 0);
+  const totalCap = data.employees.reduce((s, e) => s + e.cap_hours, 0);
+  const overCount = data.employees.filter(e => e.cap_hours > 0 && e.hours > e.cap_hours).length;
+  const deltaLabel = k.avg_abs_delta != null ? Math.round(k.avg_abs_delta) + 'h' : '--';
+  const coverageAlert = k.coverage_rate < 75 ? 'red' : (k.coverage_rate < 90 ? 'yellow' : null);
+  const openAlert = k.open_slots > 5 ? 'red' : (k.open_slots > 0 ? 'yellow' : null);
+  const overAlert = overCount > 0 ? 'red' : null;
+  const deltaAlert = (k.avg_abs_delta || 0) > 15 ? 'red' : ((k.avg_abs_delta || 0) > 5 ? 'yellow' : null);
+
+  document.getElementById('kpi-bar').innerHTML = [
+    kpiCard('Abdeckung', Math.round(k.coverage_rate) + '%', k.assigned_shifts + ' von ' + (k.assigned_shifts + k.open_slots) + ' Schichten', coverageAlert),
+    kpiCard('Offene Schichten', k.open_slots, k.open_slots === 0 ? 'Voll besetzt' : 'Noch zu besetzen', openAlert),
+    kpiCard('Ueberschreitungen', overCount, overCount === 0 ? 'Keine' : overCount + ' ueber Gehaltsgrenze', overAlert),
+    kpiCard('Avg |Delta|', deltaLabel, 'vs Sollstunden', deltaAlert),
+    kpiCard('Mitarbeiter', k.active_employees, 'von ' + k.employees + ' gesamt'),
+    kpiCard('Gesamtstunden', Math.round(totalHours) + 'h', 'von ' + Math.round(totalCap) + 'h Kapazitaet'),
+  ].join('');
+
+  document.getElementById('meta-line').textContent =
+    'Betrieb: ' + data.betrieb + '  |  ' + data.month + '  |  Snapshot: ' + data.snapshot_id.slice(0, 20) + '...';
+
+  // Filter employees
+  let rows = data.employees.slice();
+
+  if (filters.type !== 'all') {
+    rows = rows.filter(e => e.type_key === filters.type);
+  }
+  if (filters.status !== 'all') {
+    rows = rows.filter(e => getStatus(e) === filters.status);
+  }
+  if (searchVal) {
+    rows = rows.filter(e => {
+      const haystack = [e.name, ...e.skills].join(' ').toLowerCase();
+      return haystack.includes(searchVal);
+    });
+  }
+
+  // Sort
+  rows.sort((a, b) => {
+    let va, vb;
+    if (sortKey === 'name') { va = a.name; vb = b.name; return va.localeCompare(vb) * sortDir; }
+    if (sortKey === 'hours') { va = a.hours; vb = b.hours; }
+    else if (sortKey === 'shifts') { va = a.shifts; vb = b.shifts; }
+    else if (sortKey === 'apps') { va = a.apps; vb = b.apps; }
+    else if (sortKey === 'target') { va = a.target_hours || 0; vb = b.target_hours || 0; }
+    else if (sortKey === 'delta') { va = Math.abs(a.delta_to_target || 0); vb = Math.abs(b.delta_to_target || 0); }
+    else { va = a.hours; vb = b.hours; }
+    return (va - vb) * sortDir;
+  });
+
+  // Filter button styling
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    const [group, val] = btn.dataset.filter.split('-');
+    const active = filters[group] === val;
+    btn.className = 'filter-btn px-3 py-1.5 text-sm rounded border ' +
+      (active ? 'bg-gray-800 text-white border-gray-800' : 'bg-white text-gray-600 border-gray-300 hover:bg-gray-50');
+  });
+
+  // Build table
+  const tbody = document.getElementById('table-body');
+  let html = '';
+
+  rows.forEach(emp => {
+    const status = getStatus(emp);
+    const utilPct = emp.cap_hours > 0 ? Math.round((emp.hours / emp.cap_hours) * 100) : 0;
+    const salary = emp.hours * emp.wage;
+    const salaryPct = emp.max_salary > 0 ? Math.round((salary / emp.max_salary) * 100) : 0;
+    const expanded = expandedRows.has(emp.name);
+
+    const rowBg = status === 'ueber' ? 'bg-red-50' :
+                  (emp.delta_to_target != null && Math.abs(emp.delta_to_target) > 15) ? 'bg-yellow-50' :
+                  status === 'idle' ? 'bg-blue-50' : '';
+
+    html += '<tr class="border-b border-gray-100 hover:bg-gray-50 cursor-pointer ' + rowBg + '" onclick="toggleExpand(\'' + emp.name.replace(/'/g, "\\'") + '\')">';
+
+    // Name
+    html += '<td class="px-3 py-2.5 align-top font-medium">' + emp.name + '</td>';
+
+    // Typ
+    html += '<td class="px-3 py-2.5 align-top">' + typeBadge(emp.type_key) + '</td>';
+
+    // Stunden
+    html += '<td class="px-3 py-2.5 align-top text-right font-mono">' + emp.hours + 'h</td>';
+
+    // Kap. (cap)
+    html += '<td class="px-3 py-2.5 align-top text-right font-mono text-gray-500">' + Math.round(emp.cap_hours * 10) / 10 + 'h</td>';
+
+    // Soll (target_hours)
+    const targetH = emp.target_hours != null ? Math.round(emp.target_hours * 10) / 10 + 'h' : '--';
+    html += '<td class="px-3 py-2.5 align-top text-right font-mono text-gray-500">' + targetH + '</td>';
+
+    // Delta (delta_to_target)
+    if (emp.delta_to_target != null) {
+      const d = emp.delta_to_target;
+      const dColor = Math.abs(d) < 5 ? 'text-green-600' : (Math.abs(d) < 15 ? 'text-yellow-600' : 'text-red-600');
+      const sign = d > 0 ? '+' : '';
+      html += '<td class="px-3 py-2.5 align-top text-right font-mono ' + dColor + '">' + sign + (Math.round(d * 10) / 10) + 'h</td>';
+    } else {
+      html += '<td class="px-3 py-2.5 align-top text-right font-mono text-gray-400">--</td>';
+    }
+
+    // Auslastung bar
+    html += '<td class="px-3 py-2.5 align-top">' + barHtml(utilPct, utilPct + '%') + '</td>';
+
+    // Gehaltsgrenze bar
+    html += '<td class="px-3 py-2.5 align-top">' + barHtml(salaryPct, Math.round(salary) + '/' + emp.max_salary) + '</td>';
+
+    // Schichten
+    html += '<td class="px-3 py-2.5 align-top text-center">' + emp.shifts + '</td>';
+
+    // Bewerbungen
+    html += '<td class="px-3 py-2.5 align-top text-center">' +
+      (emp.apps > 0 ? '<span class="font-medium text-blue-600">' + emp.apps + '</span>' : '<span class="text-gray-400">0</span>') +
+      '</td>';
+
+    // Status
+    html += '<td class="px-3 py-2.5 align-top">' + statusBadge(status) + '</td>';
+
+    html += '</tr>';
+
+    // Expanded detail row
+    if (expanded) {
+      html += '<tr class="expand-row open border-b border-gray-100 bg-gray-50">' +
+        '<td colspan="11" class="px-3 py-4">';
+
+      // Weekly breakdown
+      const weekLabels = getWeekLabels();
+      const weeks = new Array(weekLabels.length).fill(0);
+      emp.shift_dates.forEach(d => { const w = weekNum(d); if (w < weeks.length) weeks[w]++; });
+
+      html += '<div class="grid grid-cols-2 gap-4">';
+
+      // Left: weekly bars
+      html += '<div>';
+      html += '<div class="text-xs font-semibold text-gray-500 mb-2">Wochenverteilung</div>';
+      weekLabels.forEach((label, i) => {
+        const count = weeks[i];
+        const maxShifts = 5;
+        const w = Math.min((count / maxShifts) * 100, 100);
+        html += '<div class="flex items-center gap-2 mb-1">' +
+          '<span class="text-xs w-[100px] text-gray-500">' + label + '</span>' +
+          '<div class="flex-1 bg-gray-200 rounded h-3 overflow-hidden">' +
+          '<div class="h-full rounded bg-blue-400" style="width:' + w + '%"></div>' +
+          '</div>' +
+          '<span class="text-xs font-mono w-[20px] text-right">' + count + '</span>' +
+          '</div>';
+      });
+      html += '</div>';
+
+      // Right: details
+      html += '<div class="text-xs space-y-1">';
+      html += '<div><span class="text-gray-500">Beschaeftigung:</span> ' + emp.type + '</div>';
+      html += '<div><span class="text-gray-500">Stundenlohn:</span> ' + emp.wage.toFixed(2) + ' EUR</div>';
+      html += '<div><span class="text-gray-500">Gehalt (proj.):</span> ' + Math.round(salary) + ' EUR / ' + emp.max_salary + ' EUR (' + salaryPct + '%)</div>';
+      html += '<div><span class="text-gray-500">Skills:</span> ' + emp.skills.join(', ') + '</div>';
+      if (emp.absences > 0) {
+        html += '<div class="text-red-600"><span class="text-gray-500">Abwesenheit:</span> ' + emp.absence_note + '</div>';
+      }
+      if (status === 'ueber') {
+        const over = Math.round((emp.hours - emp.cap_hours) * 10) / 10;
+        html += '<div class="mt-2 px-2 py-1 bg-red-100 text-red-700 rounded font-medium">' +
+          'Achtung: ' + over + 'h ueber Monatsgrenze (' + emp.hours + 'h / ' + Math.round(emp.cap_hours * 10) / 10 + 'h)' +
+          '</div>';
+      }
+      html += '</div>';
+
+      html += '</div></td></tr>';
+    }
+  });
+
+  tbody.innerHTML = html;
+}
+
+// Initial render
+renderCalendar();
+renderShiftTypes();
+renderAssessment();
+render();
+</script>
+
+</body>
+</html>
