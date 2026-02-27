@@ -1,0 +1,28 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "javeed-plugins",
+  "version": "1.0.0",
+  "description": "Javeed gastro operating system plugins -- shift planning, allocation, and venue management",
+  "owner": {
+    "name": "Florian",
+    "email": "florian@illmakeithappen.de"
+  },
+  "plugins": [
+    {
+      "name": "javeed-ordio",
+      "description": "Shift allocation engine for Javeed venues -- deterministic planning, coverage analysis, plan evaluation, and Betriebsleiter review workflow",
+      "version": "0.3.0",
+      "category": "productivity",
+      "source": "./javeed-ordio",
+      "keywords": [
+        "ordio",
+        "shift-planning",
+        "allocation",
+        "scheduling",
+        "javeed",
+        "gastro",
+        "workforce"
+      ]
+    }
+  ]
+}

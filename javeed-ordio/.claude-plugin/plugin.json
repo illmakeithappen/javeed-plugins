@@ -1,0 +1,17 @@
+{
+  "name": "javeed-ordio",
+  "version": "0.3.0",
+  "description": "Shift allocation engine for Javeed venues -- deterministic planning, coverage analysis, plan evaluation, and Betriebsleiter review workflow via remote MCP server",
+  "author": {
+    "name": "Florian"
+  },
+  "keywords": [
+    "ordio",
+    "shift-planning",
+    "allocation",
+    "scheduling",
+    "javeed",
+    "gastro",
+    "workforce"
+  ]
+}

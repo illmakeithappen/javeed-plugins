@@ -1,0 +1,71 @@
+{
+  "default": {
+    "description": "Generic fair distribution with legal and contract limits.",
+    "policy": {
+      "prefer_applicants": true,
+      "distribute_applications_across_month": false,
+      "max_consecutive_days": 5
+    },
+    "employee_rules": {}
+  },
+  "bacchus_march_2026": {
+    "description": "Rules extracted from 'Ordio-Vorgaben für März 2026' preview (Bacchus).",
+    "policy": {
+      "prefer_applicants": true,
+      "distribute_applications_across_month": true,
+      "max_consecutive_days": 5
+    },
+    "employee_rules": {
+      "bar": {
+        "target_weekly_hours": 20,
+        "notes": "March override due to overtime reduction (-4h)."
+      },
+      "clara": {"target_weekly_hours": 8},
+      "david": {"target_weekly_hours": 20},
+      "lilia": {"target_weekly_hours": 10},
+      "matteo": {
+        "target_weekly_hours": 28,
+        "preferred_working_areas": ["theke"]
+      },
+      "nele": {"target_weekly_hours": 10},
+      "nico": {"target_weekly_hours": 8},
+      "omer": {
+        "target_weekly_hours": 16,
+        "notes": "March override due to overtime reduction (-12h).",
+        "preferred_working_areas": ["theke"]
+      },
+      "rosa": {"target_weekly_hours": 8},
+      "nell": {"target_weekly_hours": 8}
+    }
+  },
+  "hinweg_march_2026": {
+    "description": "Rules extracted from 'Ordio-Vorgaben für März 2026' preview (Hin&Weg).",
+    "policy": {
+      "prefer_applicants": true,
+      "distribute_applications_across_month": true,
+      "max_consecutive_days": 5,
+      "prefer_shift_type_variation": true
+    },
+    "employee_rules": {
+      "annika": {"target_weekly_hours": 8},
+      "besiane": {"target_weekly_hours": 10},
+      "ece": {
+        "preferred_shift_types": ["mittel", "normal"]
+      },
+      "elena": {"no_additional_shifts": true},
+      "felix": {
+        "preferred_shift_types": ["mittel", "normal"],
+        "disable_max_hours": true
+      },
+      "jana": {"max_weekly_hours": 8},
+      "joelle": {"target_weekly_hours": 9.2},
+      "jonas": {"max_additional_monthly_hours": 8},
+      "julie": {"target_weekly_hours": 9.2},
+      "luise": {"no_additional_shifts": true},
+      "luma": {"max_monthly_hours": 40},
+      "maja": {"max_monthly_hours": 40},
+      "niklas": {"max_additional_monthly_hours": 6},
+      "raphael": {"max_monthly_hours": 40}
+    }
+  }
+}
