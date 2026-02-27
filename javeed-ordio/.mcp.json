@@ -1,7 +1,7 @@
 {
   "javeed-ordio": {
     "type": "http",
-    "url": "https://javeed-ordio-PLACEHOLDER.europe-west3.run.app/mcp",
+    "url": "https://javeed-ordio-mcp.onrender.com/mcp",
     "headers": {
       "Authorization": "Bearer ${JAVEED_ORDIO_API_KEY}"
     }
